@@ -101,14 +101,10 @@ class Dijkstra {
     const { x, y } = node;
     const gridWidth = this.nodeGrid.length;
     const gridHeight = this.nodeGrid[0].length;
-    if (x > 0)
-      neighbors.push(this.nodeGrid[x - 1][y]);
-    if (x < gridWidth - 1)
-      neighbors.push(this.nodeGrid[x + 1][y]);
-    if (y > 0)
-      neighbors.push(this.nodeGrid[x][y - 1]);
-    if (y < gridHeight - 1) 
-      neighbors.push(this.nodeGrid[x][y + 1]);
+    if (x > 0) neighbors.push(this.nodeGrid[x - 1][y]);
+    if (x < gridWidth - 1) neighbors.push(this.nodeGrid[x + 1][y]);
+    if (y > 0) neighbors.push(this.nodeGrid[x][y - 1]);
+    if (y < gridHeight - 1) neighbors.push(this.nodeGrid[x][y + 1]);
 
     return neighbors.filter((n) => !n.isVisited);
   }
