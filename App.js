@@ -1,5 +1,2 @@
-import GridController from './GridController.js'
-const app = 
-    new GridController();
-
-
+import GridController from "./GridController.js";
+const app = new GridController();
