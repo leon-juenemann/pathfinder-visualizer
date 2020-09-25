@@ -1,0 +1,56 @@
+html, body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0; padding: 0;
+}
+
+#grid {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+    height: auto;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.node {
+  height: 25px;
+  display: flex;
+  flex-grow: 1;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.start {
+  background-color: green;
+}
+.start:hover {
+  opacity: 40%;
+}
+
+.end:hover {
+  opacity: 40%;
+}
+
+.end {
+  background-color: red;
+}
+
+.visited {
+  background-color: blue;
+}
+
+.current {
+  background-color: yellow;
+}
+
+.wall {
+  background-color: black;
+}
+
+.shortest_path {
+  background-color: yellow;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/grid.css">
+        <link rel="stylesheet" type="text/css" href="./css/navbar.css">
+        <script type="module" src="./mazes/prim.js"></script>
+        <script type="module" src="./mazes/recursiveDivision.js"></script>
+        <script type="module" src="./algorithms/AStar.js"></script>
+        <script type="module" src="./algorithms/Dijkstra.js"></script>
+        <script type="module" src="./algorithms/Dfs.js"></script>
+        <script type="module" src="GridView.js"></script>
+        <script type="module" src="GridModel.js"></script>
+        <script type="module" src="GridController.js"></script>
+        <script type="module" src="App.js"></script>
+    </head>
+    <body>
+      <div id="grid-app">
+        <div class="topnav" id="navbar">
+          <button class="actionbtn" id="animate-btn">Animate</button>
+          <div class="dropdown">
+            <button id="algo-dropdown" class="dropbtn">Algorithms
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <button id="dijkstra-btn"class="actionbtn">Dijkstra</button>
+              <button id="astar-btn" class="actionbtn">A* Manhatten</button>
+              <button id="dfs-btn"class="actionbtn">Depth First Search (DFS)  </button>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button id="maze-dropdown" class="dropbtn">Mazes
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <button id="clear-btn"class="actionbtn">Clear</button>
+              <button id="prim-btn"class="actionbtn">Randomized Prim</button>
+              <button id="rec-btn"class="actionbtn">Recursive Division</button>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button id="speed-dropdown"class="dropbtn">Speed
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <button id="slow-btn" class="actionbtn">Slow</button>
+              <button id="medium-btn" class="actionbtn">Medium</button>
+              <button id="fast-btn" class="actionbtn">Fast</button>
+            </div>
+          </div>
+        </div>
+        <div id="grid"></div>
+      </div>
+    </body>
+</html>
