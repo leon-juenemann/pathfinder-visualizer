@@ -9,5 +9,3 @@ You can do:
 - draw obstacles on the grid
 - draw a maze using maze generation algorithmns
 - change the animation speed
-
-Code is pretty messy still. Especially the algorithms code.
